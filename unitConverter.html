@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unit Converter</title>
+    <script>
+        function convertUnit() {
+            // Get the input value
+            var inputValue = parseFloat(document.getElementById("inputValue").value);
+
+            // Get the selected conversion type
+            var conversionType = document.querySelector('input[name="conversionType"]:checked').value;
+
+            // Perform the conversion
+            var result;
+            switch (conversionType) {
+                case "cmToMeter":
+                    result = inputValue / 100;
+                    break;
+                case "meterToCm":
+                    result = inputValue * 100;
+                    break;
+                case "meterToKm":
+                    result = inputValue / 1000;
+                    break;
+                case "kmToMeter":
+                    result = inputValue * 1000;
+                    break;
+                case "celsiusToFahrenheit":
+                    result = (inputValue * 9/5) + 32;
+                    break;
+                default:
+                    result = "Invalid conversion type";
+            }
+
+            // Display the result in the div element
+            document.getElementById("result").innerHTML = "Result: " + result;
+
+            // Display the result using alert()
+            alert("Result: " + result);
+        }
+    </script>
+</head>
+<body>
+    <h1>Unit Converter</h1>
+
+    <label for="inputValue">Enter Value:</label>
+    <input type="text" id="inputValue" placeholder="Enter value">
+
+    <br><br>
+
+    <input type="radio" name="conversionType" value="CmtoMetre"> CM to Metre
+    <input type="radio" name="conversionType" value="MetretoCm"> Metre to CM
+    <input type="radio" name="conversionType" value="MetretoKm"> Metre to KM
+    <input type="radio" name="conversionType" value="KmtoMetre"> KM to Metre
+    <input type="radio" name="conversionType" value="Celsius to Fahrenheit"> Celsius to Fahrenheit
+
+    <br><br>
+
+    <button onclick="convertUnit()">Convert</button>
+
+    <br><br>
+
+    <div id="result"></div>
+</body>
+</html>

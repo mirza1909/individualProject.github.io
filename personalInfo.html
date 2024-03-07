@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mirza Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('mirza3.jpg');
+  min-height: 100%;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 17px;
+  background-color: #0be4d9;
+  border: none;
+  color: #564b4b;
+  text-align: center;
+  font-size: 15px;
+  padding: 7px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+a {text-decoration: none;}
+
+</style>
+</head>
+<body>
+
+<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <div class="bgimg"></div>
+</nav>
+
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" 
+      onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home"></i> HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><i class="fa fa-user"></i> ABOUT ME</a>
+      <a href="tools.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small"><i class="fa fa-th"></i> TOOLS</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="w3-main w3-padding-large" style="margin-left:40%">
+
+  
+  <header class="w3-container w3-center" style="padding:128px 16px" id="about">
+    <h1 ><b>Muhammad Mirza Hasif</b></h1>
+    <h1 ><b>bin Mohd Fahmi</b></h1>
+    <p>A22DW0151</p>
+    <p>Computer Science Student in Section 40</p>
+    <button class="button" style="vertical-align:middle"><span><a href="cv.pdf">View CV</a></span></button>
+    <button class="button" style="vertical-align:middle"><span><a href="cv.pdf" download>Download CV</a></span></button>
+  </header>
+
+  <div class="w3-padding-32 w3-content" id="portfolio">
+    <h2 class="w3-text-grey">My Gallery</h2>
+    <hr class="w3-opacity">
+
+  
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="mirza2.jpg" style="width:100%">
+        <img src="mirza10.jpg" style="width:100%">
+        <img src="mirza5.jpg" style="width:100%">
+        <img src="mirza4.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="mirza6.jpg" style="width:100%">
+        <img src="mirza7.jpg" style="width:100%">
+        <img src="mirza9.jpg" style="width:100%">
+        <img src="mirza8.jpg" style="width:100%">
+        <img src="mirza11.jpg" style="width:100%">
+
+      </div>
+   
+    </div>
+
+  </div>
+
+  
+  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+    <h2>About</h2>
+    <hr class="w3-opacity">
+    <p>Hi, I'm Muhammad Mirza Hasif bin Mohd Fahmi and people call me Mirza. I am 20 y/o student from Universiti Teknologi Malaysia in Computer Science Course. 
+    I'm born in 9 December 2004 in Johor Bahru, Johor. Started my education in Tadika Nuri then, Sekolah Kebangsaan Bandar Uda 2. Got an offer from MRSM and
+    decided to accept it during 13 y/o. After SPM, I'm manage to further my studies in Diploma of Computer Science in Universiti Teknologi Malaysia since
+    I'm the person that love innovation and this course offers a lot of new ideas for improvements in the future especially in the technology field. Other than 
+    that I'm just the person that love to do sport such as playing futsal, badminton and further more as long as it can hit my adrenaline rush and escape the 
+    world for a while.</p>
+    
+    </div><br>
+
+    <h3 class="w3-padding-24">My Education</h3>
+    <img src="utm.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Universiti Teknologi Malaysia</span></p>
+    <p>2022 - 2025</p><br>
+   
+    <img src="mrsmlogo.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Maktab Rendah Sains MARA Johor Bahru.</span></p>
+    <p>2017 - 2022</p><br>
+    
+    <img src="skbu2.jpeg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-text-black w3-margin-right">Sekolah Kebangsaan Bandar Uda 2.</span></p>
+    <p>2011 - 2016</p><br>
+    
+
+<footer class="w3-container w3-padding-10 w3-center w3-opacity w3-light-grey w3-xsmall">
+    <p class="w3-medium"> Powered by <span style="color:#2c8ebc;">Mirza Inc.</span></p>
+  </footer>
+
+</div>
+
+<script> 
+function openNav() {
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
